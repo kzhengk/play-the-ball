@@ -11,6 +11,14 @@
         <canvas id="gameCanvas"></canvas>
         <div class="controls">
             <p>Controls: Use Up/Down arrow keys or W/S keys to move your paddle</p>
+            <div class="difficulty">
+                <label>Difficulty:</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
             <button id="startBtn">Start Game</button>
             <div class="score">
                 <span>Player: <span id="playerScore">0</span></span>

@@ -1,7 +1,15 @@
-class TennisGame {
+export class TennisGame {
     constructor() {
         this.canvas = document.getElementById('gameCanvas');
         this.ctx = this.canvas.getContext('2d');
+        
+        // Add difficulty settings
+        this.difficulty = 'normal'; // easy, normal, hard
+        this.speeds = {
+            easy: { paddle: 5, ball: 4, ai: 4 },
+            normal: { paddle: 7, ball: 5, ai: 5 },
+            hard: { paddle: 8, ball: 7, ai: 7 }
+        };
         
         // Set canvas size
         this.canvas.width = 800;

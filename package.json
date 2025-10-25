@@ -2,14 +2,21 @@
   "name": "play-the-ball",
   "version": "0.1.0",
   "private": true,
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint . --ext .js",
     "format": "prettier --write \"**/*.{js,json,md,html,css}\"",
-    "test": "vitest"
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6",
+    "@vitest/coverage-c8": "^0.34.6",
+    "eslint": "^8.53.0",
+    "prettier": "^3.0.3"
   }
 }
