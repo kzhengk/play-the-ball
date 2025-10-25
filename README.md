@@ -40,7 +40,7 @@ Quick next steps (recommended)
    - Visit https://replit.com and sign up with Email, Google, GitHub, or Apple.
    - Verify your email and optionally enable 2FA in Account → Security.
 
-2. (Optional) Add an SSH key to Replit
+2. Add an SSH key to Replit
    - On macOS (bash):
      ```bash
      ssh-keygen -t ed25519 -C "your_email@example.com"
