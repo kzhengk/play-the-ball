@@ -1,0 +1,15 @@
+{
+  "name": "play-the-ball",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,json,md,html,css}\"",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
